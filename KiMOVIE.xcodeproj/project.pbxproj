@@ -21,6 +21,11 @@
 		D2CF06542AA6A7C900AD2C1A /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF06532AA6A7C900AD2C1A /* LottieAnimationView.swift */; };
 		D2CF06562AA6A84C00AD2C1A /* LaunchScreenLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = D2CF06552AA6A84C00AD2C1A /* LaunchScreenLottie.json */; };
 		D2CF06592AA6AAEA00AD2C1A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF06582AA6AAEA00AD2C1A /* Lottie */; };
+		D2CF065C2AA7848700AD2C1A /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF065B2AA7848700AD2C1A /* MainTabbarController.swift */; };
+		D2CF065E2AA7DCC200AD2C1A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF065D2AA7DCC100AD2C1A /* Constants.swift */; };
+		D2CF06612AA7E04000AD2C1A /* ImageSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF06602AA7E04000AD2C1A /* ImageSizes.swift */; };
+		D2CF06632AA7E04800AD2C1A /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF06622AA7E04800AD2C1A /* EmptyState.swift */; };
+		D2CF06672AA7E07000AD2C1A /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF06662AA7E07000AD2C1A /* CustomNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		D2CF062F2AA6951700AD2C1A /* KiMOVIEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiMOVIEUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D2CF06532AA6A7C900AD2C1A /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
 		D2CF06552AA6A84C00AD2C1A /* LaunchScreenLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchScreenLottie.json; sourceTree = "<group>"; };
+		D2CF065B2AA7848700AD2C1A /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		D2CF065D2AA7DCC100AD2C1A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D2CF06602AA7E04000AD2C1A /* ImageSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSizes.swift; sourceTree = "<group>"; };
+		D2CF06622AA7E04800AD2C1A /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		D2CF06662AA7E07000AD2C1A /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				D2CF06522AA6A69000AD2C1A /* LaunchScreen */,
+				D2CF065A2AA7847400AD2C1A /* TabbarViewController */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -159,6 +170,8 @@
 		D2CF064D2AA6A47D00AD2C1A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D2CF065F2AA7E03100AD2C1A /* Utils */,
+				D2CF06642AA7E05A00AD2C1A /* UI */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -180,6 +193,7 @@
 		D2CF06502AA6A4A300AD2C1A /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				D2CF065D2AA7DCC100AD2C1A /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -200,6 +214,39 @@
 				D2CF06532AA6A7C900AD2C1A /* LottieAnimationView.swift */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		D2CF065A2AA7847400AD2C1A /* TabbarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF065B2AA7848700AD2C1A /* MainTabbarController.swift */,
+			);
+			path = TabbarViewController;
+			sourceTree = "<group>";
+		};
+		D2CF065F2AA7E03100AD2C1A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF06602AA7E04000AD2C1A /* ImageSizes.swift */,
+				D2CF06622AA7E04800AD2C1A /* EmptyState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D2CF06642AA7E05A00AD2C1A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF06652AA7E06800AD2C1A /* NavigationBar */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D2CF06652AA7E06800AD2C1A /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF06662AA7E07000AD2C1A /* CustomNavigationController.swift */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,8 +394,13 @@
 			files = (
 				D2CF06542AA6A7C900AD2C1A /* LottieAnimationView.swift in Sources */,
 				D2CF06112AA6951600AD2C1A /* ViewController.swift in Sources */,
+				D2CF065C2AA7848700AD2C1A /* MainTabbarController.swift in Sources */,
+				D2CF06672AA7E07000AD2C1A /* CustomNavigationController.swift in Sources */,
 				D2CF060D2AA6951600AD2C1A /* AppDelegate.swift in Sources */,
 				D2CF060F2AA6951600AD2C1A /* SceneDelegate.swift in Sources */,
+				D2CF06632AA7E04800AD2C1A /* EmptyState.swift in Sources */,
+				D2CF065E2AA7DCC200AD2C1A /* Constants.swift in Sources */,
+				D2CF06612AA7E04000AD2C1A /* ImageSizes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

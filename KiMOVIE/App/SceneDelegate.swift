@@ -57,9 +57,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	private func setMainScreenFlow() {
 
 		let workItem = DispatchWorkItem {
-			let mainFlow = ViewController()
+//			let mainFlow = ViewController()
+			let tabbarViewConrtoller = MainTabbarController()
+			tabbarViewConrtoller.view.backgroundColor = Constants.Styles.backGroundColor
 			UIView.transition(with: self.window!, duration: 0.5, options: .transitionCrossDissolve) {
-				self.window?.rootViewController = mainFlow
+				self.window?.rootViewController = tabbarViewConrtoller
 			}
 		}
 		DispatchQueue.main.asyncAfter(deadline: .now() + 5, execute: workItem )
