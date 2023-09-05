@@ -6,13 +6,23 @@
 //
 
 import UIKit
+import Lottie
+
+
 
 class ViewController: UIViewController {
 
+	let logoAnimation =  LottieAnimationView()
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+//		view.addSubview(logoAnimation)
+//		lo
+		view.backgroundColor = .blue
+
 	}
+
+
 
 
 }

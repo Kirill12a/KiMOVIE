@@ -10,7 +10,6 @@
 		D2CF060D2AA6951600AD2C1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF060C2AA6951600AD2C1A /* AppDelegate.swift */; };
 		D2CF060F2AA6951600AD2C1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF060E2AA6951600AD2C1A /* SceneDelegate.swift */; };
 		D2CF06112AA6951600AD2C1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF06102AA6951600AD2C1A /* ViewController.swift */; };
-		D2CF06142AA6951600AD2C1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CF06122AA6951600AD2C1A /* Main.storyboard */; };
 		D2CF06162AA6951700AD2C1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CF06152AA6951700AD2C1A /* Assets.xcassets */; };
 		D2CF06192AA6951700AD2C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CF06172AA6951700AD2C1A /* LaunchScreen.storyboard */; };
 		D2CF06242AA6951700AD2C1A /* KiMOVIETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF06232AA6951700AD2C1A /* KiMOVIETests.swift */; };
@@ -19,7 +18,9 @@
 		D2CF063E2AA6A13100AD2C1A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF063D2AA6A13100AD2C1A /* Alamofire */; };
 		D2CF06412AA6A15600AD2C1A /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF06402AA6A15600AD2C1A /* ProgressHUD */; };
 		D2CF06442AA6A16B00AD2C1A /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF06432AA6A16B00AD2C1A /* SnapKit-Dynamic */; };
-		D2CF064A2AA6A29500AD2C1A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF06492AA6A29500AD2C1A /* Lottie */; };
+		D2CF06542AA6A7C900AD2C1A /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF06532AA6A7C900AD2C1A /* LottieAnimationView.swift */; };
+		D2CF06562AA6A84C00AD2C1A /* LaunchScreenLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = D2CF06552AA6A84C00AD2C1A /* LaunchScreenLottie.json */; };
+		D2CF06592AA6AAEA00AD2C1A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D2CF06582AA6AAEA00AD2C1A /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		D2CF060C2AA6951600AD2C1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2CF060E2AA6951600AD2C1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D2CF06102AA6951600AD2C1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2CF06132AA6951600AD2C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2CF06152AA6951700AD2C1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2CF06182AA6951700AD2C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2CF061A2AA6951700AD2C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		D2CF06292AA6951700AD2C1A /* KiMOVIEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiMOVIEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CF062D2AA6951700AD2C1A /* KiMOVIEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiMOVIEUITests.swift; sourceTree = "<group>"; };
 		D2CF062F2AA6951700AD2C1A /* KiMOVIEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiMOVIEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2CF06532AA6A7C900AD2C1A /* LottieAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationView.swift; sourceTree = "<group>"; };
+		D2CF06552AA6A84C00AD2C1A /* LaunchScreenLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchScreenLottie.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,7 @@
 				D2CF063E2AA6A13100AD2C1A /* Alamofire in Frameworks */,
 				D2CF06412AA6A15600AD2C1A /* ProgressHUD in Frameworks */,
 				D2CF06442AA6A16B00AD2C1A /* SnapKit-Dynamic in Frameworks */,
-				D2CF064A2AA6A29500AD2C1A /* Lottie in Frameworks */,
+				D2CF06592AA6AAEA00AD2C1A /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +118,6 @@
 				D2CF06502AA6A4A300AD2C1A /* Constants */,
 				D2CF06512AA6A4AD00AD2C1A /* Resources */,
 				D2CF06102AA6951600AD2C1A /* ViewController.swift */,
-				D2CF06122AA6951600AD2C1A /* Main.storyboard */,
 			);
 			path = KiMOVIE;
 			sourceTree = "<group>";
@@ -150,7 +151,7 @@
 		D2CF064C2AA6A46600AD2C1A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D2CF06172AA6951700AD2C1A /* LaunchScreen.storyboard */,
+				D2CF06522AA6A69000AD2C1A /* LaunchScreen */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -186,9 +187,19 @@
 		D2CF06512AA6A4AD00AD2C1A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D2CF06552AA6A84C00AD2C1A /* LaunchScreenLottie.json */,
 				D2CF06152AA6951700AD2C1A /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2CF06522AA6A69000AD2C1A /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D2CF06172AA6951700AD2C1A /* LaunchScreen.storyboard */,
+				D2CF06532AA6A7C900AD2C1A /* LottieAnimationView.swift */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +222,7 @@
 				D2CF063D2AA6A13100AD2C1A /* Alamofire */,
 				D2CF06402AA6A15600AD2C1A /* ProgressHUD */,
 				D2CF06432AA6A16B00AD2C1A /* SnapKit-Dynamic */,
-				D2CF06492AA6A29500AD2C1A /* Lottie */,
+				D2CF06582AA6AAEA00AD2C1A /* Lottie */,
 			);
 			productName = KiMOVIE;
 			productReference = D2CF06092AA6951600AD2C1A /* KiMOVIE.app */;
@@ -289,7 +300,7 @@
 				D2CF063C2AA6A13100AD2C1A /* XCRemoteSwiftPackageReference "Alamofire" */,
 				D2CF063F2AA6A15600AD2C1A /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 				D2CF06422AA6A16B00AD2C1A /* XCRemoteSwiftPackageReference "SnapKit" */,
-				D2CF06482AA6A29500AD2C1A /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				D2CF06572AA6AAEA00AD2C1A /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = D2CF060A2AA6951600AD2C1A /* Products */;
 			projectDirPath = "";
@@ -309,7 +320,7 @@
 			files = (
 				D2CF06192AA6951700AD2C1A /* LaunchScreen.storyboard in Resources */,
 				D2CF06162AA6951700AD2C1A /* Assets.xcassets in Resources */,
-				D2CF06142AA6951600AD2C1A /* Main.storyboard in Resources */,
+				D2CF06562AA6A84C00AD2C1A /* LaunchScreenLottie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CF06542AA6A7C900AD2C1A /* LottieAnimationView.swift in Sources */,
 				D2CF06112AA6951600AD2C1A /* ViewController.swift in Sources */,
 				D2CF060D2AA6951600AD2C1A /* AppDelegate.swift in Sources */,
 				D2CF060F2AA6951600AD2C1A /* SceneDelegate.swift in Sources */,
@@ -373,14 +385,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D2CF06122AA6951600AD2C1A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2CF06132AA6951600AD2C1A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2CF06172AA6951700AD2C1A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -519,7 +523,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = KiMovie;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -551,7 +554,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = KiMovie;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -712,12 +714,12 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		D2CF06482AA6A29500AD2C1A /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		D2CF06572AA6AAEA00AD2C1A /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -738,9 +740,9 @@
 			package = D2CF06422AA6A16B00AD2C1A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
 		};
-		D2CF06492AA6A29500AD2C1A /* Lottie */ = {
+		D2CF06582AA6AAEA00AD2C1A /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D2CF06482AA6A29500AD2C1A /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = D2CF06572AA6AAEA00AD2C1A /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
