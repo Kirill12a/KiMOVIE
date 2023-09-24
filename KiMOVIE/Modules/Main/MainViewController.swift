@@ -96,6 +96,7 @@ class MainViewController: BaseViewController {
 extension MainViewController: iMainDisplayLogic {
 	func showEmptyStateView(emptyStateViewModel: MainViewModel) {
 		hideSpinner()
+		// мы могли бы показать предупреждение... или дополнительную логику, помимо перезаписи модели представления пустым состоянием, лучше сохранить этот метод вместе с методом успеха "loadCategoriesAndMovies"
 		loadNewInfoInTable(viewModel: emptyStateViewModel)
 	}
 

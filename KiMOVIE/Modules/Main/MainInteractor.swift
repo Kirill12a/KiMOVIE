@@ -59,7 +59,9 @@ extension MainInteractor: iMainBusinessLogic {
 		// enter
 		dispatchGroup.enter()
 		movieService.fetchPopularMovies { populaerMoviesResponseModel in
+			print("HELLLo fetchPopularMovies")
 			self.popularMovies = populaerMoviesResponseModel.results ?? []
+			dispatchGroup.leave()
 		} failure: { error, networkError in
 			self.popularMovies.removeAll()
 			dispatchGroup.leave()
@@ -68,7 +70,9 @@ extension MainInteractor: iMainBusinessLogic {
 		// enter
 		dispatchGroup.enter()
 		movieService.fetchTopRatedMovies { topRatedMoviesResponseModel in
+			print("HELLLo fetchTopRatedMovies")
 			self.topRatedMovies = topRatedMoviesResponseModel.results ?? []
+			dispatchGroup.leave()
 		} failure: { error, networkError in
 			self.topRatedMovies.removeAll()
 			dispatchGroup.leave()
@@ -77,6 +81,7 @@ extension MainInteractor: iMainBusinessLogic {
 		// enter
 		dispatchGroup.enter()
 		movieService.fetchNowPlayingMovies { nowPlaying in
+			print("HELLLo fetchNowPlayingMovies")
 			self.nowPlayingMovies = nowPlaying.results ?? []
 			dispatchGroup.leave()
 		} failure: { error, networkError in
@@ -87,6 +92,7 @@ extension MainInteractor: iMainBusinessLogic {
 		// enter
 		dispatchGroup.enter()
 		movieService.fetchUpcomingMovies { upcoming in
+			print("HELLLo fetchUpcomingMovies")
 			self.upcomingMovies = upcoming.results ?? []
 			dispatchGroup.leave()
 		} failure: { error, apiError in
@@ -96,6 +102,7 @@ extension MainInteractor: iMainBusinessLogic {
 
 
 		dispatchGroup.notify(queue: .main) {
+			print("HELLLo")
 			self.allMovieListsAreaEmty()
 			?
 			self.presenter?.onGetMoviesForMainAllFailed()

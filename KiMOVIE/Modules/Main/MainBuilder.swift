@@ -13,17 +13,12 @@ class MainBuilder {
 		let interactor = MainInteractor()
 		let presenter = MainPresenter()
 		let router = MainRouter()
-
 		viewController.interactor = interactor
 		viewController.router = router
-
 		interactor.presenter = presenter
-
 		presenter.viewController = viewController
-
 		router.viewController = viewController
 		router.dataStore = interactor
-
 		return viewController
 	}
 }

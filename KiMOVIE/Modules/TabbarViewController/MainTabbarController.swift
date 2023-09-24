@@ -19,7 +19,7 @@ final class MainTabbarController: UITabBarController {
 	}
 
 	private func assembly() {
-		let newFilmReleases = MainViewController()
+		let newFilmReleases = MainBuilder.viewController()
 		newFilmReleases.tabBarItem = UITabBarItem(title: Constants.TabbarTitles.home, image: UIImage(systemName: "popcorn"), tag: 0)
 		let homeNavigationConroller = CustomNavigationController(rootViewController: newFilmReleases)
 
