@@ -20,10 +20,8 @@ final class MovieCollectionViewCellModel {
 	}
 }
 
-
-
-//extension MovieCollectionViewCellModel: iCollectionDrawerItem {
-//	var collectionDrawer: iCollectionDrawer {
-//		return MovieColviewDr
-//	}
-//}
+extension MovieCollectionViewCellModel: iCollectionDrawerItem {
+	var collectionDrawer: iCollectionDrawer {
+		return MoviewCollectionViewDrawer()
+	}
+}

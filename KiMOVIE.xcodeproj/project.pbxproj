@@ -58,6 +58,7 @@
 		D2CF06B62AAA6B0100AD2C1A /* MovieCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF06B52AAA6B0100AD2C1A /* MovieCollectionViewCellModel.swift */; };
 		D2CF06B82AAA6C9000AD2C1A /* MovieCollectionViewDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF06B72AAA6C9000AD2C1A /* MovieCollectionViewDrawer.swift */; };
 		D2CF06BA2AAA6CE900AD2C1A /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF06B92AAA6CE900AD2C1A /* MovieCollectionViewCell.swift */; };
+		D2CF06BD2AB1CA6800AD2C1A /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CF06BC2AB1CA6800AD2C1A /* CustomImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		D2CF06B52AAA6B0100AD2C1A /* MovieCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		D2CF06B72AAA6C9000AD2C1A /* MovieCollectionViewDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewDrawer.swift; sourceTree = "<group>"; };
 		D2CF06B92AAA6CE900AD2C1A /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2CF06BC2AB1CA6800AD2C1A /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +308,7 @@
 				D2CF069D2AA8F1C000AD2C1A /* TableViewCell */,
 				D2CF06652AA7E06800AD2C1A /* NavigationBar */,
 				D2CF06A12AA9C45D00AD2C1A /* BaseViewController.swift */,
+				D2CF06BC2AB1CA6800AD2C1A /* CustomImageView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -647,6 +650,7 @@
 				D2CF069C2AA8E70B00AD2C1A /* MainEnums.swift in Sources */,
 				D2CF06632AA7E04800AD2C1A /* EmptyState.swift in Sources */,
 				D2CF06982AA8E6D400AD2C1A /* MainInteractor.swift in Sources */,
+				D2CF06BD2AB1CA6800AD2C1A /* CustomImageView.swift in Sources */,
 				D2CF067F2AA7FAED00AD2C1A /* NetworkEndpoints.swift in Sources */,
 				D2CF06AF2AAA619800AD2C1A /* MovieCategoryTapProtocol.swift in Sources */,
 				D2CF066C2AA7F3A100AD2C1A /* MainPresenter.swift in Sources */,

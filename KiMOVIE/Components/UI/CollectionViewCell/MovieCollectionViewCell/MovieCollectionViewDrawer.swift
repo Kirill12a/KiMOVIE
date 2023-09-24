@@ -7,14 +7,27 @@
 
 import UIKit
 
-//final class MovieCollectionViewDrawer: iCollectionDrawer {
-//	func dequeueCollectionCell(_ collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
-////		collectionView.register(Movieccel, forCellWithReuseIdentifier: <#T##String#>)
-//	}
-//
-//	func drawCollectionCell(_ collectionView: UICollectionViewCell, withItem item: Any) {
-//		
-//	}
-//
-//
-//}
+final class MoviewCollectionViewDrawer: iCollectionDrawer {
+
+	func dequeueCollectionCell(_ collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
+		collectionView.register(MovieCollectionViewCell.self, forCellWithReuseIdentifier: MovieCollectionViewCell.getCollectionIdentifier())
+
+		return collectionView.dequeueReusableCell(withReuseIdentifier: MovieCollectionViewCell.getCollectionIdentifier(), for: indexPath)
+	}
+
+	func drawCollectionCell(_ collectionView: UICollectionViewCell, withItem item: Any) {
+		guard let cell = collectionView as? MovieCollectionViewCell, let cellVM = item as? MovieCollectionViewCellModel
+		else {
+			return
+		}
+
+		cell.setMovieTitle(title: cellVM.movieTitle)
+
+		if let posterURL = cellVM.moviePosterURL {
+			cell.setMoviePosterImage(url: posterURL, placeHolder: UIImage.init(named: "moviePosterNotFound"))
+		} else {
+			cell.setDefaultPosterImage(placeholder: UIImage.init(named: "moviePosterNotFound"))
+		}
+	}
+	
+}

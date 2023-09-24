@@ -47,7 +47,6 @@ class MainViewController: BaseViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
 		setupViews()
 		setupTableView()
 		getMoviesList()
