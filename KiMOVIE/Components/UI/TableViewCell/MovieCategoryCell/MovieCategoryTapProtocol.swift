@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol iMoviewCategoryTap: NSObject {
+protocol iMovieCategoryTap: NSObject {
 	func userDidSelectedElement(indexSelected: IndexPath, additionalInfo: Any?)
 }

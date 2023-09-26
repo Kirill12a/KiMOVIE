@@ -27,6 +27,11 @@ class MainRouter: NSObject {
 extension MainRouter: iMainRoutingLogic {
 
 	func routeToMovieDetail() {
+		let moviewDetailVC = MovieDetailBuilder.viewController()
+		if var movieDetailDS = moviewDetailVC.router?.dataStore, let homeDataStore = dataStore {
+			passDataToMovieDetail(source: homeDataStore, destination: &movieDetailDS)
+		}
+		viewController?.navigationController?.pushViewController(moviewDetailVC, animated: true)
 		//		let movieDetailVC = MovieDetailBuilder.viewController()
 		//		if var movieDetailDS = movieDetailVC.router?.dataStore, let homeDataStore = dataStore {
 		//			passDataToMovieDetail(source: homeDataStore, destination: &movieDetailDS)

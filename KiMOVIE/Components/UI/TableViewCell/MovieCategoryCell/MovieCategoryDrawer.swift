@@ -22,7 +22,7 @@ final class MovieCategoryDrawer: iCellDrawer {
 		cell.setCategoryTitleLabelText(text: cellVM.categoryTitle)
 		cell.setCollectionElementsToShow(cells: cellVM.elementsToShow)
 
-		if let delegate = delegate as? iMoviewCategoryTap{
+		if let delegate = delegate as? iMovieCategoryTap{
 			cell.setTapDelegate(delegate: delegate)
 		}
 

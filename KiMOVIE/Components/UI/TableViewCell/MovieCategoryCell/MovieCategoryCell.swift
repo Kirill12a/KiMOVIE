@@ -34,7 +34,7 @@ class MovieCategoryCell: UITableViewCell, iGetCellIdentifier {
 	// MARK: - Variables
 
 	private var collectionElements: [iCollectionDrawerItem] = []
-	private weak var delegate: iMoviewCategoryTap?
+	private weak var delegate: iMovieCategoryTap?
 	private var categoryIdentifier: Any?
 
 	// MARK: - Life Cycle
@@ -85,7 +85,7 @@ class MovieCategoryCell: UITableViewCell, iGetCellIdentifier {
 		moviesCollectionView.reloadData()
 	}
 
-	func setTapDelegate(delegate: iMoviewCategoryTap){
+	func setTapDelegate(delegate: iMovieCategoryTap){
 		self.delegate = delegate
 	}
 

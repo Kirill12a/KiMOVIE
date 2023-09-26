@@ -24,6 +24,17 @@ enum Constants {
 		static let upcoming = "category_upcoming"
 	}
 
+	enum MovieDetailCategories {
+		static let actors = "category_actors"
+		static let crew = "category_crew"
+		static let reviews = "category_reviews"
+	}
+
+	enum MovieDetail {
+		static let reviewAuthor = "review_author"
+		static let rating = "review_rating"
+	}
+
 	struct TableViewRefreshControl {
 		static let description = "refresh_description"
 	}

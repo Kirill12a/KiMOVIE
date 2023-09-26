@@ -132,7 +132,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 //MARK: -MovieCategoryTap protocol implementation
-extension MainViewController: iMoviewCategoryTap {
+extension MainViewController: iMovieCategoryTap {
 	func userDidSelectedElement(indexSelected: IndexPath, additionalInfo: Any?) {
 		if let homeCategorySelected = additionalInfo as? MainCategory {
 			self.categoryOfItemTapped = homeCategorySelected
