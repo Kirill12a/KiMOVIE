@@ -19,7 +19,6 @@ final class ReviewDrawer: iCellDrawer {
 		}
 
 		cell.setAuthor(text: cellVM.author)
-
 		if let rating = cellVM.reviewRating{
 			cell.setRating(text: rating)
 		}

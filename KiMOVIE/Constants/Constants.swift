@@ -64,9 +64,6 @@ enum Constants {
 		static let reviewAuthorColor: UIColor = .white
 		static let reviewTextColor: UIColor = .white
 		static let emptyStateImageTint: UIColor = .red
-		static let reviewBackgroundColor: UIColor = UIColor(red: 0.1568627451,
-															green: 0,
-															blue: 0.1568627451,
-															alpha: 0.1568627451)
+		static let reviewBackgroundColor: UIColor = #colorLiteral(red: 0.1568627451, green: 0.1568627451, blue: 0.1568627451, alpha: 1)
 	}
 }

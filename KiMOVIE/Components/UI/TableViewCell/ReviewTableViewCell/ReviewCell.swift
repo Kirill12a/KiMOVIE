@@ -131,12 +131,12 @@ class ReviewCell: UITableViewCell, iGetCellIdentifier {
 	}
 
 	func setAuthor(text: String) {
-		self.authorlabel.text = String(format: Constants.MovieDetail.reviewAuthor, text)
+//		self.authorlabel.text = String(format: "Revie author: ", text)
+		self.authorlabel.text = "Revie author: \(text)"
 	}
 
 	func setRating(text: String) {
-		self.ratingLabel.text = String(format: Constants.MovieDetail.rating, text)
-
+		self.ratingLabel.text = "Rating: \(text) "
 	}
 
 
