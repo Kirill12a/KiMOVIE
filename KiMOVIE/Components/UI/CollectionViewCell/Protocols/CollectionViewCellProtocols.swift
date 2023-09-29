@@ -19,7 +19,7 @@ extension iGetCollectionIdentifier where Self: UICollectionViewCell {
 
 protocol iCollectionDrawer {
 	func dequeueCollectionCell(_ collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell
-
+	
 	func drawCollectionCell(_ collectionView: UICollectionViewCell, withItem item: Any)
 }
 

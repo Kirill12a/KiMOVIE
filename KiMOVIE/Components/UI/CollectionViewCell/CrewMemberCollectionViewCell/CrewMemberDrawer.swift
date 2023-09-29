@@ -26,7 +26,7 @@ final class CrewMemberDrawer: iCollectionDrawer {
 
 		if let castImage = cellVM.imageUrl {
 			cell.setMemberImage(url: castImage, placeHolderImage: UIImage.init(named: "userNotFound")?.withTintColor(Constants.Styles.mainColor))
-		}else{
+		} else {
 			cell.setPlaceholderImage(image: UIImage.init(named: "userNotFound")?.withTintColor(Constants.Styles.mainColor))
 		}
 	}

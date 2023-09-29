@@ -34,7 +34,6 @@ extension MainPresenter: iMainPresentationLogic {
 
 		var categoryCells = [iDrawerItem]()
 
-
 		if !popular.isEmpty{
 			let popularCells : [iCollectionDrawerItem] = popular.map({MovieCollectionViewCellModel.init(moviewResponseModel: $0)})
 			categoryCells.append(MovieCategoryCellModel.init(title: MainCategory.popular.title, elementsToDisplay: popularCells, additionalInfo: MainCategory.popular))
@@ -67,6 +66,4 @@ extension MainPresenter: iMainPresentationLogic {
 		let emptyStateViewModel = MainViewModel.init(movieCategories: [EmptyStateCellModel.init(emptyState: EmptyState.home)])
 		viewController?.showEmptyStateView(emptyStateViewModel: emptyStateViewModel)
 	}
-
-
 }

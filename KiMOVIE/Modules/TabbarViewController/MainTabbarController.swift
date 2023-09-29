@@ -23,6 +23,7 @@ final class MainTabbarController: UITabBarController {
 		newFilmReleases.tabBarItem = UITabBarItem(title: Constants.TabbarTitles.home, image: UIImage(systemName: "popcorn"), tag: 0)
 		let homeNavigationConroller = CustomNavigationController(rootViewController: newFilmReleases)
 
+		//MARK: - В след. обнове
 //		let search = MovieSearchBuilder.viewController()
 //		search.tabBarItem = UITabBarItem.init(title: Constants.TabbarTitles.search , image: UIImage.init(named: "search_item"), tag: 1)
 //		let searchNavitgationController = CustomNavigationController.init(rootViewController: search)
